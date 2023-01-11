@@ -16,9 +16,10 @@ public class Level01_Login_Repeat_Yourself {
 	WebDriver driver;
 	String projectLocator = System.getProperty("user.dir");
 
-	By usernameTextboxBy = By.name("login[username]");
-	By passwordTextboxBy = By.name("login[password]");
-	By loginButtonBy = By.xpath("//button[@title='Login']");
+	By usernameTextboxBy = By.xpath("//input[@id='usernameOrEmail']");
+	By passwordTextboxBy = By.xpath("//input[@id='password']");
+	By continueButton = By.xpath("//button[text()='Continue']");
+	By loginButtonBy = By.xpath("//button[text()='Log In']");
 
 	@BeforeClass
 	public void beforeClass() {
@@ -29,78 +30,85 @@ public class Level01_Login_Repeat_Yourself {
 
 	@BeforeMethod // Lặp lại bước này cho all testcase
 	public void beforeMethod() {
-		driver.get("http://live.techpanda.org/index.php/customer/account/login/");
+		driver.get("https://wordpress.com/log-in");
 	}
 
 	@Test
 	public void TC01_Empty_Email_Username() {
 		driver.findElement(usernameTextboxBy).sendKeys("");
-		driver.findElement(loginButtonBy).click();
+		driver.findElement(continueButton).click();
 		sleepInSecond(2);
 
-		Assert.assertTrue(driver.findElement(By.xpath("//div[@id='advice-required-entry-email']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Please enter a username or email address.']"))
+				.isDisplayed());
 	}
 
 	@Test
 	public void TC02_Invalid_Email() {
 		driver.findElement(usernameTextboxBy).sendKeys("automation" + getRandomNumber() + "@aaaa");
-		driver.findElement(loginButtonBy).click();
+		driver.findElement(continueButton).click();
 		sleepInSecond(2);
 
-		Assert.assertTrue(driver.findElement(By.xpath("//div[@id='advice-validate-email-email']")).isDisplayed());
+		// Cách 1: Element nested text lồng nhiều phần khác nhau
+		Assert.assertTrue(driver
+				.findElement(By.xpath(
+						"//span[contains(string(),'User does not exist. Would you like to create a new account?')]"))
+				.isDisplayed());
+		// Cách 2: Gộp lại .getText() - Cắt khoảng trống đầu và cuối .trim()
+		String userNotExitsMessage = driver.findElement(By.xpath("//div[@class='form-input-validation is-error']"))
+				.getText().trim();
+		Assert.assertEquals(userNotExitsMessage, "User does not exist. Would you like to create a new account?");
+
 	}
 
 	@Test
 	public void TC03_Username_Not_Exits() {
 		driver.findElement(usernameTextboxBy).sendKeys("automationkfc" + getRandomNumber() + "@gmail.com");
-		driver.findElement(passwordTextboxBy).sendKeys("123456");
-		driver.findElement(loginButtonBy).click();
+		driver.findElement(continueButton).click();
 		sleepInSecond(2);
-
-		Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Invalid login or password.']")).isDisplayed());
+		
+		Assert.assertTrue(driver
+				.findElement(By.xpath(
+						"//span[contains(string(),'User does not exist. Would you like to create a new account?')]"))
+				.isDisplayed());
 	}
 
 	@Test
 	public void TC04_Empty_Password() {
 		driver.findElement(usernameTextboxBy).sendKeys("automationtvt@gmail.com");
-		driver.findElement(passwordTextboxBy).sendKeys("");
+		driver.findElement(continueButton).click();
+		sleepInSecond(2);
 		driver.findElement(loginButtonBy).click();
 		sleepInSecond(2);
 
-		Assert.assertTrue(driver.findElement(By.xpath("//div[@id='advice-required-entry-pass']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//span[text()=\"Don't forget to enter your password.\"]")).isDisplayed());
 
 	}
 
 	@Test
 	public void TC05_Invalid_Password() {
 		driver.findElement(usernameTextboxBy).sendKeys("automationtvt@gmail.com");
+		driver.findElement(continueButton).click();
+		sleepInSecond(2);
 		driver.findElement(passwordTextboxBy).sendKeys("123");
 		driver.findElement(loginButtonBy).click();
 		sleepInSecond(2);
 
-		Assert.assertTrue(driver.findElement(By.xpath("//div[@id='advice-validate-password-pass']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//span[text()=\"Oops, that's not the right password. Please try again!\"]")).isDisplayed());
 
 	}
 
+
 	@Test
-	public void TC06_Incorrect_Password() {
+	public void TC06_Valid_Email_Password() {
 		driver.findElement(usernameTextboxBy).sendKeys("automationtvt@gmail.com");
-		driver.findElement(passwordTextboxBy).sendKeys("1234567");
+		driver.findElement(continueButton).click();
+		sleepInSecond(2);
+		driver.findElement(passwordTextboxBy).sendKeys("123456?Aa");
 		driver.findElement(loginButtonBy).click();
 		sleepInSecond(2);
 
-		Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Invalid login or password.']")).isDisplayed());
-
-	}
-
-	@Test
-	public void TC07_Valid_Email_Password() {
-		driver.findElement(usernameTextboxBy).sendKeys("automationtvt@gmail.com");
-		driver.findElement(passwordTextboxBy).sendKeys("123456");
-		driver.findElement(loginButtonBy).click();
-		sleepInSecond(2);
-
-		Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='My Dashboard']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//h2[text()='Chào mừng tới Đọc']")).isDisplayed());
 
 	}
 
