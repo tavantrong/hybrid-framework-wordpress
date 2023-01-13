@@ -96,7 +96,6 @@ public class Level02_Login_BasePage_01 {
 		basePage.clickToElement(driver, "//button[text()='Continue']");
 		sleepInSecond(2);
 		basePage.sendkeyToElement(driver, "//input[@id='password']", "123");
-		driver.findElement(passwordTextboxBy).sendKeys("123");
 		basePage.clickToElement(driver, "//button[text()='Log In']");
 		sleepInSecond(2);
 
