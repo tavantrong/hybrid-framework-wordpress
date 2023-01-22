@@ -2,7 +2,7 @@
 <suite name="WordPress - Admin" parallel="false">
   <test name="run on FIREFOX">
     <classes>
-      <class name="com.wordpress.posts.Level01_Login_Repeat_Yourself"/>
+      <class name="com.wordpress.posts.Level03_Login_Page_Object"/>
     </classes>
   </test> 
 </suite>
