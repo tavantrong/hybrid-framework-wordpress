@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - Admin" parallel="false">
+  <test name="run on FIREFOX">
+    <classes>
+      <class name="com.nopcommerce.user.Level03_Login_PageObject"/>
+    </classes>
+  </test> 
+  
+  </suite>

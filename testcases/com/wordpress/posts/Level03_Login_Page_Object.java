@@ -11,8 +11,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import commons.BasePage;
-import pageObjects.DashboardPageObject;
-import pageObjects.LoginPageObject;
+import pageObjects_wordpress.DashboardPageObject;
+import pageObjects_wordpress.LoginPageObject;
 
 public class Level03_Login_Page_Object extends BasePage {
 	WebDriver driver;
