@@ -15,13 +15,13 @@ public class BaseTest {
 	
 	protected WebDriver getBrowserDriver (String browserName) {
 		if (browserName.equalsIgnoreCase("firefox")) {
-			System.getProperty("webdriver.gecko.driver", projectLocator + "\\browserDriver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", projectLocator + "\\browserDriver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("chrome")) {
-			System.getProperty("webdriver.chrome.driver", projectLocator + "\\browserDriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", projectLocator + "\\browserDriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("edge_chromium")) {
-			System.getProperty("webdriver.edge.driver", projectLocator + "\\browserDriver\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", projectLocator + "\\browserDriver\\msedgedriver.exe");
 			driver = new EdgeDriver();			
 		}  else {
 			throw new RuntimeException("Please input the browser name!");

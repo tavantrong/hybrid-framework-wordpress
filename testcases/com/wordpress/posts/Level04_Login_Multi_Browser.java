@@ -21,7 +21,7 @@ public class Level04_Login_Multi_Browser extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		getBrowserDriver(browserName);
+		driver = getBrowserDriver(browserName);
 	}
 	
 	@Parameters("url")
