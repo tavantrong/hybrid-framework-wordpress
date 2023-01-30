@@ -18,7 +18,7 @@ public class BaseTest {
 	String projectLocator = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
 
-	protected WebDriver getBrowserDriver(String browserName) {
+	protected WebDriver getBrowserDriver(String browserName, String url) {
 		Browser browser = Browser.valueOf(browserName.toUpperCase());
 
 		if (browser == Browser.FIREFOX) {
@@ -58,6 +58,7 @@ public class BaseTest {
 		} else {
 			throw new RuntimeException("Please input the browser name!");
 		}
+		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		return driver;
 	}

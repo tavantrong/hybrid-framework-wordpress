@@ -7,9 +7,11 @@ import pageUIs_nopCommerce.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage{
 	WebDriver driver;
+	//PageGeneratorManager pageGenerator;
 	
 	public RegisterPageObject (WebDriver driver) {
 		this.driver = driver;
+		//pageGenerator = PageGeneratorManager.getPageGenerator();
 	}
 
 	public void enterToFirstNameTextbox(String firstName) {
@@ -54,9 +56,10 @@ public class RegisterPageObject extends BasePage{
 		
 	}
 
-	public void clickToContinueButton() {
+	public HomePageObject clickToContinueButton() {
 		waitForElementClickable(driver, RegisterPageUI.CONTINUE_BUTTON);
 		clickToElement(driver, RegisterPageUI.CONTINUE_BUTTON);
+		return PageGeneratorManager.getHomePage(driver);
 		
 	}
 

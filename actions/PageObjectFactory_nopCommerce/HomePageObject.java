@@ -28,8 +28,7 @@ public class HomePageObject extends BasePage{
 	
 	public void ClickToRegisterLink() {
 		waitForElementClickable(driver, registerLink);
-		clickToElement(driver, registerLink);
-		
+		clickToElement(driver, registerLink);		
 	}
 
 	public boolean isMyAccountLinkDisplayed() {
@@ -39,7 +38,11 @@ public class HomePageObject extends BasePage{
 
 	public void clickToLoginLink() {
 		waitForElementClickable(driver, loginLink);
-		clickToElement(driver, loginLink);
-		
+		clickToElement(driver, loginLink);		
+	}
+
+	public void clickToMyAccountLink() {
+		waitForElementClickable(driver, loginLink);
+		clickToElement(driver, loginLink);	
 	}
 }

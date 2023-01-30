@@ -179,8 +179,12 @@ public class BasePage {
 		return getWebElement(driver, locator).getText();
 	}
 	
-	public String getElementAttribute(WebDriver driver, String locator, String attributeName) {
+	public String getElementAttributeByName(WebDriver driver, String locator, String attributeName) {
 		return getWebElement(driver, locator).getAttribute(attributeName);
+	}
+	
+	public String getElementAttributeValue(WebDriver driver, String locator) {
+		return getWebElement(driver, locator).getAttribute("value");
 	}
 	
 	public int getElementNumber(WebDriver driver, String locator) {
