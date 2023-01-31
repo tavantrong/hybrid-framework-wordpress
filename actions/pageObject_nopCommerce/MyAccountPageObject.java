@@ -27,5 +27,7 @@ public class MyAccountPageObject extends BasePage{
 		return getElementAttributeValue(driver, MyAccountPageUI.EMAIL_TEXTBOX);
 	}
 
+
+
 	
 }

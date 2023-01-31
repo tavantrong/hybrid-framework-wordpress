@@ -13,6 +13,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObject_nopCommerce.AboutUsPageObject;
+import pageObject_nopCommerce.HomePageObject;
+import pageObject_nopCommerce.NewsPageObject;
+import pageObject_nopCommerce.PageGeneratorManager;
+import pageObject_nopCommerce.ShoppingCartPageObject;
+import pageObject_nopCommerce.SiteMapPageObject;
+import pageUIs_nopCommerce.BasePageUI;
+
 public class BasePage {
 	
 	public static BasePage getbasePage () {
@@ -339,6 +347,38 @@ public class BasePage {
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
+	}
+	
+	/* Common Page Object */
+	
+	public SiteMapPageObject clickToSiteMapLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.SITE_MAP_LINK);
+		clickToElement(driver, BasePageUI.SITE_MAP_LINK);
+		return new SiteMapPageObject(driver);
+	}
+	
+	public HomePageObject clickToHomePageLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.HOME_PAGE_IMG);
+		clickToElement(driver, BasePageUI.HOME_PAGE_IMG);
+		return PageGeneratorManager.getHomePage(driver);
+	}
+	
+	public ShoppingCartPageObject clickToShoppingCartLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.SHOPPING_CART_LINK);
+		clickToElement(driver, BasePageUI.SHOPPING_CART_LINK);
+		return PageGeneratorManager.getShoppingCartPage(driver);
+	}
+	
+	public AboutUsPageObject clickToAboutUsLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ABOUT_US_PAGE_LINK);
+		clickToElement(driver, BasePageUI.ABOUT_US_PAGE_LINK);
+		return PageGeneratorManager.getAboutUsPage(driver);
+	}
+	
+	public NewsPageObject clickToNewsLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.NEWS_PAGE_LINK);
+		clickToElement(driver, BasePageUI.NEWS_PAGE_LINK);
+		return PageGeneratorManager.getNewsPage(driver);
 	}
 	
 	private long longTimeout = 30;
