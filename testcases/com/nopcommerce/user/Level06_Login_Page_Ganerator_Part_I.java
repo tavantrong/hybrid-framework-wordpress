@@ -8,10 +8,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject_nopCommerce.HomePageObject;
-import pageObject_nopCommerce.LoginPageObject;
-import pageObject_nopCommerce.MyAccountPageObject;
-import pageObject_nopCommerce.RegisterPageObject;
+import pageObject.nopCommerce.HomePageObject;
+import pageObject.nopCommerce.LoginPageObject;
+import pageObject.nopCommerce.MyAccountPageObject;
+import pageObject.nopCommerce.RegisterPageObject;
 
 public class Level06_Login_Page_Ganerator_Part_I extends BaseTest{
 	WebDriver driver;

@@ -13,13 +13,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObject_nopCommerce.AboutUsPageObject;
-import pageObject_nopCommerce.HomePageObject;
-import pageObject_nopCommerce.NewsPageObject;
-import pageObject_nopCommerce.PageGeneratorManager;
-import pageObject_nopCommerce.ShoppingCartPageObject;
-import pageObject_nopCommerce.SiteMapPageObject;
-import pageUIs_nopCommerce.BasePageUI;
+import pageObject.nopCommerce.AboutUsPageObject;
+import pageObject.nopCommerce.HomePageObject;
+import pageObject.nopCommerce.NewsPageObject;
+import pageObject.nopCommerce.PageGeneratorManager;
+import pageObject.nopCommerce.ShoppingCartPageObject;
+import pageObject.nopCommerce.SiteMapPageObject;
+import pageUIs.nopCommerce.BasePageUI;
 
 public class BasePage {
 	

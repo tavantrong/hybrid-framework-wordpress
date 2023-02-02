@@ -1,4 +1,4 @@
-package pageUIs_nopCommerce;
+package pageUIs.nopCommerce;
 
 public class HomePageUI {
 	public static final String REGISTER_LINKTEXT = "//a[@class='ico-register']";

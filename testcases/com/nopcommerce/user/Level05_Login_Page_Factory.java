@@ -9,10 +9,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import PageObjectFactory_nopCommerce.HomePageObject;
-import PageObjectFactory_nopCommerce.LoginPageObject;
-import PageObjectFactory_nopCommerce.RegisterPageObject;
 import commons.BaseTest;
+import pageObjectFactory.nopCommerce.HomePageObject;
+import pageObjectFactory.nopCommerce.LoginPageObject;
+import pageObjectFactory.nopCommerce.RegisterPageObject;
 
 public class Level05_Login_Page_Factory extends BaseTest{
 	WebDriver driver;

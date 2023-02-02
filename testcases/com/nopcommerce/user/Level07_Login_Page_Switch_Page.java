@@ -8,15 +8,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject_nopCommerce.AboutUsPageObject;
-import pageObject_nopCommerce.HomePageObject;
-import pageObject_nopCommerce.LoginPageObject;
-import pageObject_nopCommerce.MyAccountPageObject;
-import pageObject_nopCommerce.NewsPageObject;
-import pageObject_nopCommerce.PageGeneratorManager;
-import pageObject_nopCommerce.RegisterPageObject;
-import pageObject_nopCommerce.ShoppingCartPageObject;
-import pageObject_nopCommerce.SiteMapPageObject;
+import pageObject.nopCommerce.AboutUsPageObject;
+import pageObject.nopCommerce.HomePageObject;
+import pageObject.nopCommerce.LoginPageObject;
+import pageObject.nopCommerce.MyAccountPageObject;
+import pageObject.nopCommerce.NewsPageObject;
+import pageObject.nopCommerce.PageGeneratorManager;
+import pageObject.nopCommerce.RegisterPageObject;
+import pageObject.nopCommerce.ShoppingCartPageObject;
+import pageObject.nopCommerce.SiteMapPageObject;
 
 public class Level07_Login_Page_Switch_Page extends BaseTest{
 	WebDriver driver;

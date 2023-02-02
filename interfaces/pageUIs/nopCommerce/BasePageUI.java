@@ -1,4 +1,4 @@
-package pageUIs_nopCommerce;
+package pageUIs.nopCommerce;
 
 public class BasePageUI {
 	// Không có tham số - truyền cố định

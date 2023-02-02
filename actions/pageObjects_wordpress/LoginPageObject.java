@@ -3,7 +3,7 @@ package pageObjects_wordpress;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs_wordpress.LoginPageUI;
+import pageUIs.wordpress.LoginPageUI;
 
 public class LoginPageObject extends BasePage {
 	// Biến trung gian chỉ class này mới sử dụng
