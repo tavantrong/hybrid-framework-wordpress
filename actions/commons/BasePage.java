@@ -135,12 +135,22 @@ public class BasePage {
 		getWebElement(driver, locator).click();
 	}
 	
+	public void clickToElement(WebDriver driver, String locator, String... values) {
+		getWebElement(driver, getDynamicLocator(locator, values)).click();
+	}
+	
 	public void clickToElement(WebElement element) {
 		element.click();
 	}
 	
 	public void sendkeyToElement(WebDriver driver, String locator, String value) {
 		WebElement element = getWebElement(driver, locator);
+		element.clear();
+		element.sendKeys(value);
+	}
+	
+	public void sendkeyToElement(WebDriver driver, String locator, String value, String... values) {
+		WebElement element = getWebElement(driver, getDynamicLocator(locator, values));
 		element.clear();
 		element.sendKeys(value);
 	}
@@ -187,6 +197,14 @@ public class BasePage {
 		return getWebElement(driver, locator).getText();
 	}
 	
+	public String getTextElement(WebDriver driver, String locator, String... values) {
+		return getWebElement(driver, getDynamicLocator(locator, values)).getText();
+	}
+	
+	public String getDynamicLocator(String locator, String... values) {
+		return String.format(locator, (Object[])values);
+	}
+	
 	public String getElementAttributeByName(WebDriver driver, String locator, String attributeName) {
 		return getWebElement(driver, locator).getAttribute(attributeName);
 	}
@@ -215,6 +233,10 @@ public class BasePage {
 	
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
 		return getWebElement(driver, locator).isDisplayed();
+	}
+	
+	public boolean isElementDisplayed(WebDriver driver, String locator, String...values) {
+		return getWebElement(driver, getDynamicLocator(locator, values)).isDisplayed();
 	}
 	
 	public boolean isElementEnabled(WebDriver driver, String locator) {
@@ -292,6 +314,11 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].click();", getWebElement(driver, locator));
 	}
+	
+	public void clickToElementByJS(WebDriver driver, String locator, String... values) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].click();", getWebElement(driver, getDynamicLocator(locator, values)));
+	}
 
 	public void scrollToElementOnTop(WebDriver driver, String locator) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -334,6 +361,11 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
 	}
 	
+	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(getDynamicLocator(locator, values))));
+	}
+	
 	public void waitForListElementVisible(WebDriver driver, String locator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(locator)));
@@ -347,6 +379,11 @@ public class BasePage {
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
+	}
+	
+	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(getDynamicLocator(locator, values))));
 	}
 	
 	/* Common Page Object */
@@ -379,6 +416,31 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.NEWS_PAGE_LINK);
 		clickToElement(driver, BasePageUI.NEWS_PAGE_LINK);
 		return PageGeneratorManager.getNewsPage(driver);
+	}
+	
+	/* Dynamic Locator - Cách 1 - Page ít (5 - 15 pages)*/
+	public BasePage openFooterPageByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.FOOTER_PAGE_LINK_NAME, pageName);
+		clickToElement(driver, BasePageUI.FOOTER_PAGE_LINK_NAME, pageName);
+		// BasePageUI.FOOTER_PAGE_LINK_BY_NAME - //div[@class='footer']//a[text()='%s']
+		// pageName : News, About us, Shopping cart..
+		if (pageName.equals("Shopping cart")) {
+			return PageGeneratorManager.getShoppingCartPage(driver);
+		} else if (pageName.equals("Sitemap")) {
+			return PageGeneratorManager.getSiteMapPage(driver);
+		} else if (pageName.equals("About us")) {
+			return PageGeneratorManager.getAboutUsPage(driver);
+		} else if (pageName.equals("News")) {
+			return PageGeneratorManager.getNewsPage(driver);
+		} else {
+			throw new RuntimeException("Please input the correct page name!");
+		}
+	}
+	
+	/* Dynamic Locator - Cách 2 - Page nhiều*/
+	public void openFooterPageName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.FOOTER_PAGE_LINK_NAME, pageName);
+		clickToElement(driver, BasePageUI.FOOTER_PAGE_LINK_NAME, pageName);
 	}
 	
 	private long longTimeout = 30;

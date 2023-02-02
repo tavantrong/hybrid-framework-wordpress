@@ -10,7 +10,8 @@ public class Topic04_Download_Driver {
 	public static void main(String[] args) {
 		WebDriver driver;
 		
-		// Auto download và setup driver 
+		// Auto download và setup driver
+		// WebDriverManager là thư viên riêng download ngoài và add vào
 		WebDriverManager.chromedriver().setup();
 		//WebDriverManager.chromedriver().driverVersion("109.0.5414.76").setup();
 		// = System.setProperty("webdriver.gecko.driver", ".\\browserDriver\\geckodriver.exe");
