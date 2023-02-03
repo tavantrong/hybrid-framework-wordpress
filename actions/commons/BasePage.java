@@ -217,6 +217,10 @@ public class BasePage {
 		return getListWebElement(driver, locator).size();
 	}
 	
+	public int getElementNumber(WebDriver driver, String locator, String...values) {
+		return getListWebElement(driver, getDynamicLocator(locator, values)).size();
+	}
+	
 	public void checktoCheckbox(WebDriver driver, String locator) {
 		WebElement element = getWebElement(driver, locator);
 		if (!element.isSelected()) {
@@ -270,9 +274,14 @@ public class BasePage {
 		action.dragAndDrop(getWebElement(driver, sourceLocator), getWebElement(driver, targetLocator)).perform();
 	}
 	
-	public void sendkeyBoardToElement(WebDriver driver, String locator, Keys key) {
+	public void pressKeyboardToElement(WebDriver driver, String locator, Keys key) {
 		Actions action = new Actions (driver);
 		action.sendKeys(getWebElement(driver, locator), key).perform();
+	}
+	
+	public void pressKeyboardToElement(WebDriver driver, String locator, Keys key, String...values) {
+		Actions action = new Actions (driver);
+		action.sendKeys(getWebElement(driver, getDynamicLocator(locator, values)), key).perform();
 	}
 	
 	public Object executeForBrowser(WebDriver driver, String javaScript) {

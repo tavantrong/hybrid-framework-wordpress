@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Jquery table" parallel="false">
+
+<parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/" />
+
+  <test name="run on FIREFOX">
+  <parameter name="browser" value="firefox" />
+    <classes>
+    <class name="com.jquery.table.Level09_Data_Table"/>
+    </classes>
+  </test> 
+  
+  </suite>
