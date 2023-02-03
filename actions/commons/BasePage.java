@@ -19,7 +19,9 @@ import pageObject.nopCommerce.NewsPageObject;
 import pageObject.nopCommerce.PageGeneratorManager;
 import pageObject.nopCommerce.ShoppingCartPageObject;
 import pageObject.nopCommerce.SiteMapPageObject;
+import pageUIs.jQuery.HomePageUI;
 import pageUIs.nopCommerce.BasePageUI;
+
 
 public class BasePage {
 	
@@ -152,6 +154,11 @@ public class BasePage {
 	public void sendkeyToElement(WebDriver driver, String locator, String value, String... values) {
 		WebElement element = getWebElement(driver, getDynamicLocator(locator, values));
 		element.clear();
+		element.sendKeys(value);
+	}
+	
+	public void sendkeyToUploadFile(WebDriver driver, String locator, String value, String... values) {
+		WebElement element = getWebElement(driver, getDynamicLocator(locator, values));
 		element.sendKeys(value);
 	}
 	
@@ -393,6 +400,25 @@ public class BasePage {
 	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(getDynamicLocator(locator, values))));
+	}
+	
+	//String[] fileNames = {"file1.jpg", "file2.jpg"};
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		//Multiple OSx
+		String filePath = System.getProperty("user.dir") + getDirectorySlash("uploadFiles");
+		//Upload multiple files
+		String fullFileName = "";
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+		fullFileName = fullFileName.trim();
+		getWebElement(driver, HomePageUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
+		//sendkeyToUploadFile(driver, HomePageUI.UPLOAD_FILE_TYPE, fullFileName);
+	}
+	
+	public static String getDirectorySlash(String folderName) {
+		String separator = System.getProperty("file.separator");
+		return separator + folderName + separator;
 	}
 	
 	/* Common Page Object */
