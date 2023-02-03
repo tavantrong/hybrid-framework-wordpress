@@ -36,4 +36,21 @@ public class HomePageObject extends BasePage{
 		clickToElement(driver, HomePageUI.MYACCOUNT_LINKTEXT);
 		return PageGeneratorManager.getMyAccountPage(driver);
 	}
+
+	public void isRegisterLinkUndisplayed() {
+		waitForElementInvisible(driver, HomePageUI.REGISTER_LINKTEXT);
+		isElementUndisplayed(driver, HomePageUI.REGISTER_LINKTEXT);
+	}
+
+	public void isLoginLinkUndisplayed() {
+		waitForElementInvisible(driver, HomePageUI.LOGIN_LINKTEXT);
+		isElementUndisplayed(driver, HomePageUI.LOGIN_LINKTEXT);
+		
+	}
+
+	public void isShoppingCartNoItemTooltopUndisplayed() {
+		waitForElementInvisible(driver, HomePageUI.SHOPPING_CART_NOITEM_TOOLTIP);
+		isElementUndisplayed(driver, HomePageUI.SHOPPING_CART_NOITEM_TOOLTIP);
+		
+	}
 }

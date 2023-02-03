@@ -1,7 +1,9 @@
 package commons;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -388,8 +390,10 @@ public class BasePage {
 	}
 	
 	public void waitForElementInvisible(WebDriver driver, String locator) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.SHORT_TIMEOUT);
+		overrideImplicitWait(driver, GlobalConstants.SHORT_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
+		overrideImplicitWait(driver, GlobalConstants.LONG_TIMEOUT);
 	}
 	
 	public void waitForElementClickable(WebDriver driver, String locator) {
@@ -419,6 +423,31 @@ public class BasePage {
 	public static String getDirectorySlash(String folderName) {
 		String separator = System.getProperty("file.separator");
 		return separator + folderName + separator;
+		}
+	
+	public void overrideImplicitWait(WebDriver driver, long timeInSecond) {
+		driver.manage().timeouts().implicitlyWait(timeInSecond, TimeUnit.SECONDS);
+	}
+	
+	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+		overrideImplicitWait(driver, GlobalConstants.SHORT_TIMEOUT);
+		System.out.println("Start time: " + new Date().toString());
+		elements = getListWebElement(driver, locator);
+		overrideImplicitWait(driver, GlobalConstants.LONG_TIMEOUT);
+
+		if (elements.size() == 0) {
+			// Element ko có trong DOM - Undisplay: true
+			System.out.println("End time: " + new Date().toString());
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			// Element có trong DOM + không Display - Undisplay: true
+			System.out.println("End time: " + new Date().toString());
+			return true;
+		} else {
+			// Còn lại - Undisplay: false
+			System.out.println("Element in DOM but visible");
+			return false;
+		}
 	}
 	
 	/* Common Page Object */
@@ -479,5 +508,6 @@ public class BasePage {
 	}
 	
 	private long longTimeout = 30;
+	List<WebElement> elements;
 
 }
