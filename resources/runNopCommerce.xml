@@ -5,11 +5,14 @@
 
 <listeners>
 <listener class-name = "commons.MethodListener" />
+<listener class-name = "org.uncommons.reportng.HTMLReporter" />
+<listener class-name = "org.uncommons.reportng.JUnitXMLReporter" />
+
 </listeners>
-  <test name="run on FIREFOX">
-  <parameter name="browser" value="firefox" />
+  <test name="run on CHROME">
+  <parameter name="browser" value="chrome" />
     <classes>
-    <class name="com.nopcommerce.user.Level12_Login_Page_Assert_Verify"/>
+    <class name="com.nopcommerce.user.Level13_Login_Page_Log_Report_HTML"/>
     </classes>
   </test> 
   

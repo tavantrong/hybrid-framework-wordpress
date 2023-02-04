@@ -1,0 +1,67 @@
+[INFO ] [2023-02-04 22:52:18,683] Register - Step 01: Open Register Link at Home Page
+[INFO ] [2023-02-04 22:52:19,944] Register - Step 02: Input to FirstName with value
+[INFO ] [2023-02-04 22:52:20,134] Register - Step 03: Input to LastName with value
+[INFO ] [2023-02-04 22:52:20,316] Register - Step 04: Input to Email Textbox with value: automationkfc42245@testing.com
+[INFO ] [2023-02-04 22:52:20,510] Register - Step 05: Input to Password Textbox with value: 123456?Aa
+[INFO ] [2023-02-04 22:52:20,850] Register - Step 06: Click to Register button at Register page
+[INFO ] [2023-02-04 22:52:21,910] Register - Step 07: Verify Success message displayed
+[INFO ] [2023-02-04 22:52:22,006]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-02-04 22:52:22,008] Register - Step 08: Verify Failed message displayed
+[INFO ] [2023-02-04 22:52:22,069]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 22:52:22,131]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 22:52:22,131] Register - Step 09: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-02-04 22:52:22,748] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-02-04 22:52:23,316] Login - Step 02: Input to Email textbox with value: automationkfc42245@testing.com
+[INFO ] [2023-02-04 22:52:23,510] Login - Step 03: Input to Email textbox with value: 123456?Aa
+[INFO ] [2023-02-04 22:52:23,671] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-02-04 22:52:24,681] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-02-04 22:52:24,756]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-02-04 22:54:11,313] Register - Step 01: Open Register Link at Home Page
+[INFO ] [2023-02-04 22:54:13,309] Register - Step 02: Input to FirstName with value
+[INFO ] [2023-02-04 22:54:13,489] Register - Step 03: Input to LastName with value
+[INFO ] [2023-02-04 22:54:13,662] Register - Step 04: Input to Email Textbox with value: automationkfc2682@testing.com
+[INFO ] [2023-02-04 22:54:13,851] Register - Step 05: Input to Password Textbox with value: 123456?Aa
+[INFO ] [2023-02-04 22:54:14,199] Register - Step 06: Click to Register button at Register page
+[INFO ] [2023-02-04 22:54:15,263] Register - Step 07: Verify Success message displayed
+[INFO ] [2023-02-04 22:54:15,363]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-02-04 22:54:15,365] Register - Step 08: Verify Failed message displayed
+[INFO ] [2023-02-04 22:54:15,428]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 22:54:15,490]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 22:54:15,491] Register - Step 09: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-02-04 22:54:16,109] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-02-04 22:54:16,714] Login - Step 02: Input to Email textbox with value: automationkfc2682@testing.com
+[INFO ] [2023-02-04 22:54:16,878] Login - Step 03: Input to Email textbox with value: 123456?Aa
+[INFO ] [2023-02-04 22:54:17,072] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-02-04 22:54:18,095] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-02-04 22:54:18,172]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-02-04 23:02:02,953] Register - Step 01: Open Register Link at Home Page
+[INFO ] [2023-02-04 23:02:04,295] Register - Step 02: Input to FirstName with value
+[INFO ] [2023-02-04 23:02:04,480] Register - Step 03: Input to LastName with value
+[INFO ] [2023-02-04 23:02:04,664] Register - Step 04: Input to Email Textbox with value: automationkfc65497@testing.com
+[INFO ] [2023-02-04 23:02:04,854] Register - Step 05: Input to Password Textbox with value: 123456?Aa
+[INFO ] [2023-02-04 23:02:05,201] Register - Step 06: Click to Register button at Register page
+[INFO ] [2023-02-04 23:02:06,064] Register - Step 07: Verify Success message displayed
+[INFO ] [2023-02-04 23:02:06,152]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-02-04 23:02:06,154] Register - Step 08: Verify Failed message displayed
+[INFO ] [2023-02-04 23:02:06,216]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 23:02:06,281]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 23:02:06,281] Register - Step 09: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-02-04 23:02:06,798] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-02-04 23:05:51,571] Register - Step 01: Open Register Link at Home Page
+[INFO ] [2023-02-04 23:05:53,265] Register - Step 02: Input to FirstName with value
+[INFO ] [2023-02-04 23:05:53,450] Register - Step 03: Input to LastName with value
+[INFO ] [2023-02-04 23:05:53,632] Register - Step 04: Input to Email Textbox with value: automationkfc30876@testing.com
+[INFO ] [2023-02-04 23:05:53,822] Register - Step 05: Input to Password Textbox with value: 123456?Aa
+[INFO ] [2023-02-04 23:05:54,170] Register - Step 06: Click to Register button at Register page
+[INFO ] [2023-02-04 23:05:55,226] Register - Step 07: Verify Success message displayed
+[INFO ] [2023-02-04 23:05:55,311]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-02-04 23:05:55,313] Register - Step 08: Verify Failed message displayed
+[INFO ] [2023-02-04 23:05:55,373]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 23:05:55,437]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-02-04 23:05:55,438] Register - Step 09: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-02-04 23:05:56,047] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-02-04 23:05:56,668] Login - Step 02: Input to Email textbox with value: automationkfc30876@testing.com
+[INFO ] [2023-02-04 23:05:56,838] Login - Step 03: Input to Email textbox with value: 123456?Aa
+[INFO ] [2023-02-04 23:05:56,986] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-02-04 23:05:58,002] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-02-04 23:05:58,082]  -------------------------- PASSED -------------------------- 
