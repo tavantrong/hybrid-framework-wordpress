@@ -29,6 +29,10 @@ public class BaseTest {
 		//Init (khởi tạo) log
 		log = LogFactory.getLog(getClass());
 	}
+	
+	public WebDriver getDriver(){
+		return driver;
+	}
 
 	protected WebDriver getBrowserDriver(String browserName, String url) {
 		Browser browser = Browser.valueOf(browserName.toUpperCase());

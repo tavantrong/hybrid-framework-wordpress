@@ -6,7 +6,8 @@
 <listeners>
 <listener class-name = "commons.MethodListener" />
 <!-- <listener class-name = "reportConfig.ExtentReportListenerV2" /> -->
-<listener class-name = "reportConfig.ExtentReportListenerV4" />
+<!-- <listener class-name = "reportConfig.ExtentReportListenerV4" /> -->
+<listener class-name = "reportConfig.AllureReportListener" />
 <listener class-name = "org.uncommons.reportng.HTMLReporter" />
 <listener class-name = "org.uncommons.reportng.JUnitXMLReporter" />
 
@@ -14,7 +15,7 @@
   <test name="run on CHROME">
   <parameter name="browser" value="chrome" />
     <classes>
-    <class name="com.nopcommerce.user.Level13_Login_Page_Log_Report_HTML"/>
+    <class name="com.nopcommerce.user.Level14_Login_Page_Allure_Report"/>
     </classes>
   </test> 
   
