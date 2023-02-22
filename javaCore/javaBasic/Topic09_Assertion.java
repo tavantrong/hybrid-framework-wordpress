@@ -1,16 +1,14 @@
 package javaBasic;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
-import static org.testng.Assert.assertEquals;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class Topic09_Assertion {
 
-	@Test
-	public void TC01_Assert() {
+	public static void main(String[] args) {
 		// Có kết quả nhanh
 		// Phù hợp tầng Unit/API
 		String address = "Ho Chi Minh";
@@ -21,7 +19,7 @@ public class Topic09_Assertion {
 		assertTrue(address.equals("Ho Chi Minh"));
 
 		// Kiểm tra condition trả về là sai
-		assertFalse(address.equals("Ho Chi Minh"));
+		assertFalse(address.equals("Ho Minh"));
 
 		// Các hàm trả về kiểu boolean: isDisplay, isEnable, isSelected, isMultiple
 
