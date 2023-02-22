@@ -3,7 +3,7 @@ package javaBasic;
 public class Topic02_Loop_SapXepMang {
 	
 public static void main(String[] args) {
-	int mang[]={3,2,8,9,1,8,4,5};
+	int mang[]={3,2,8,9,1,8,4,10};
 	
 	//Tăng dần
 	// i=0 vị trí đầu; i < mang.leght(8) -1 ko lấy vị trí cuối
@@ -45,6 +45,32 @@ public static void main(String[] args) {
 		System.out.println(x);
 	}
 	
+	//Lấy giá trị lớn nhất
+	int max = 0;
+	for (int i = 0; i < mang.length; i++) {
+		if (i == 0) {
+			max = mang[i];
+		} else if(mang[i] > max) {
+			max = mang[i];
+		}
+	}
+		System.out.println("Gia trị lớn nhất trong mảng: " + max);
+		
+	//Lấy giá trị lớn nhất
+	int min = 0;
+	for (int i = 0; i < mang.length; i++) {
+			if (i == 0) {
+				min = mang[i];
+			} else if(mang[i] < max) {
+				min = mang[i];
+			}
+		}
+	System.out.println("Gia trị nhỏ nhất trong mảng: " + min);	
+		
+		
+}
+}
 	
-}
-}
+	
+	
+
