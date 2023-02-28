@@ -11,5 +11,11 @@ public class BasePageUI {
 	
 	// Có 1 tham số - Dynamic Page name
 	public static final String FOOTER_PAGE_LINK_NAME = "//div[@class='footer']//a[text()='%s']";
+	
+	public static final String DYNAMIC_RADIO_BUTTON_BY_ID = "//input[@id='%s']";
+	public static final String DYNAMIC_TEXTBOX_BY_ID = "//input[@id='%s']";
+	public static final String DYNAMIC_BUTTON_BY_VALUE = "//button[text()='%s']";
+	public static final String DYNAMIC_DROPDOWN_BY_NAME = "//select[@name='%s']";
+	public static final String DYNAMIC_ERROR_MESSAGE_BY_ID = "//span[@class='field-validation-error']//span[@id='%s-error']";
 
 }

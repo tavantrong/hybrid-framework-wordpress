@@ -32,7 +32,6 @@ public class Level09_Data_Table extends BaseTest{
 
 	}
 	
-	
 	public void TC02_Search() {
 		homePage.inputToHeaderTextboxByLabel("Females", "276880");
 		Assert.assertTrue(homePage.areRowRecordDisplay("276880", "Angola", "276472", "553353"));
@@ -50,7 +49,6 @@ public class Level09_Data_Table extends BaseTest{
 		Assert.assertTrue(homePage.areRowRecordDisplay("276880", "Angola", "276472", "553353"));
 		
 	}
-	
 	
 	public void TC03_Edit_Remove() {
 		//Delete
