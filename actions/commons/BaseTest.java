@@ -43,9 +43,8 @@ public class BaseTest {
 			System.setProperty("webdriver.gecko.driver", projectLocator + "\\browserDriver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browser == Browser.CHROME) {
-			// System.setProperty("webdriver.chrome.driver", projectLocator +
-			// "\\browserDriver\\chromedriver.exe");
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", projectLocator + "\\browserDriver\\chromedriver.exe");
+			//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser == Browser.EDGE_CHROMIUM) {
 			// System.setProperty("webdriver.edge.driver", projectLocator +

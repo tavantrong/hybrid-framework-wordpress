@@ -384,3 +384,203 @@ Session ID: 274fae714d601671901cc915d1489c54
 [INFO ] [2023-02-28 10:41:50,665] Login - Step 04: Click to Login button at Login page
 [INFO ] [2023-02-28 10:41:51,440] Login - Step 05: Verify My Account link displayed
 [INFO ] [2023-02-28 10:41:51,521]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:51,656] Validate - Step 01: Open Register Link at Home Page
+[INFO ] [2023-03-05 13:40:52,788] Validate - Step 02: Click to Register button
+[INFO ] [2023-03-05 13:40:52,929] Validate - Step 03: Validate error message at First name textbox
+[INFO ] [2023-03-05 13:40:53,018]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:53,018] Validate - Step 04: Validate error message at Last name textbox
+[INFO ] [2023-03-05 13:40:53,092]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:53,092] Validate - Step 05: Validate error message at Email textbox
+[INFO ] [2023-03-05 13:40:53,171]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:53,171] Validate - Step 06: Validate error message at Password textbox
+[INFO ] [2023-03-05 13:40:53,251]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:53,251] Validate - Step 07: Validate error message at Confirm Password textbox
+[INFO ] [2023-03-05 13:40:53,330]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:53,416] Register - Step 01: Refresh the Register page
+[INFO ] [2023-03-05 13:40:53,438] Register - Step 02: click to Radio button
+[INFO ] [2023-03-05 13:40:53,923] Register - Step 03: Input to FirstName with valueKhang
+[INFO ] [2023-03-05 13:40:54,092] Register - Step 04: Input to LastName with valueRitski
+[INFO ] [2023-03-05 13:40:54,273] Register - Step 05: Select dropdown with value: 19
+[INFO ] [2023-03-05 13:40:54,421] Register - Step 06: Select dropdown with value: March
+[INFO ] [2023-03-05 13:40:54,580] Register - Step 07: Select dropdown with value: 1987
+[INFO ] [2023-03-05 13:40:54,725] Register - Step 08: Input to Email with valueautomationkfc51026@testing.com
+[INFO ] [2023-03-05 13:40:54,920] Register - Step 09: Input to Password Textbox with value: 123456?Aa
+[INFO ] [2023-03-05 13:40:55,264] Register - Step 10: Click to Register button at Register page
+[INFO ] [2023-03-05 13:40:56,060] Register - Step 11: Verify Success message displayed
+[INFO ] [2023-03-05 13:40:56,153]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:40:56,153] Register - Step 12: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-03-05 13:40:56,630] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-05 13:40:57,113] Login - Step 02: Input to Email textbox with value: automationkfc51026@testing.com
+[INFO ] [2023-03-05 13:40:57,270] Login - Step 03: Input to Email textbox with value: 123456?Aa
+[INFO ] [2023-03-05 13:40:57,436] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-05 13:40:58,223] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-05 13:40:58,311]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:41:48,417] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-05 13:41:49,453] Login - Step 02: Input to Email textbox with value: automationkfc64619@testting.com
+[INFO ] [2023-03-05 13:41:49,652] Login - Step 03: Input to Email textbox with value: 123456?Aa
+[INFO ] [2023-03-05 13:41:49,836] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-05 13:41:50,582] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-05 13:41:50,670]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:41:58,257] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-05 13:41:59,312] Login - Step 02: Input to Email textbox with value: automationkfc64619@testting.com
+[INFO ] [2023-03-05 13:41:59,504] Login - Step 03: Input to Email textbox with value: 123456?Aa
+[INFO ] [2023-03-05 13:41:59,690] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-05 13:42:00,466] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-05 13:42:00,584]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-05 13:42:02,599] OS name = windows 10
+[INFO ] [2023-03-05 13:42:02,599] Driver instance name = windows 10
+[INFO ] [2023-03-13 18:39:27,051] Validate - Step 01: Open Register Link at Home Page
+[INFO ] [2023-03-13 18:39:28,186] Validate - Step 02: Click to Register button
+[INFO ] [2023-03-13 18:39:28,334] Validate - Step 03: Validate error message at First name textbox
+[INFO ] [2023-03-13 18:39:28,423]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:39:28,423] Validate - Step 04: Validate error message at Last name textbox
+[INFO ] [2023-03-13 18:39:28,499]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:39:28,499] Validate - Step 05: Validate error message at Email textbox
+[INFO ] [2023-03-13 18:39:28,577]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:39:28,577] Validate - Step 06: Validate error message at Password textbox
+[INFO ] [2023-03-13 18:39:28,656]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:39:28,656] Validate - Step 07: Validate error message at Confirm Password textbox
+[INFO ] [2023-03-13 18:39:28,734]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:39:28,821] Register - Step 01: Refresh the Register page
+[INFO ] [2023-03-13 18:39:28,827] Register - Step 02: click to Radio button
+[INFO ] [2023-03-13 18:39:29,328] Register - Step 03: Input to FirstName with value25949 Deetta Summit
+[INFO ] [2023-03-13 18:39:29,513] Register - Step 04: Input to LastName with valuePfeffer
+[INFO ] [2023-03-13 18:39:29,698] Register - Step 05: Select dropdown with value: 19
+[INFO ] [2023-03-13 18:39:29,843] Register - Step 06: Select dropdown with value: March
+[INFO ] [2023-03-13 18:39:30,003] Register - Step 07: Select dropdown with value: 1987
+[INFO ] [2023-03-13 18:39:30,161] Register - Step 08: Input to Email with valueSelenium69584@testing.com
+[INFO ] [2023-03-13 18:39:30,359] Register - Step 09: Input to Password Textbox with value: k9wxyrbxgdon6p
+[INFO ] [2023-03-13 18:39:30,728] Register - Step 10: Click to Register button at Register page
+[INFO ] [2023-03-13 18:39:31,516] Register - Step 11: Verify Success message displayed
+[INFO ] [2023-03-13 18:39:31,593]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:39:31,593] Register - Step 12: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-03-13 18:39:32,059] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-13 18:39:32,545] Login - Step 02: Input to Email textbox with value: Selenium69584@testing.com
+[INFO ] [2023-03-13 18:39:32,708] Login - Step 03: Input to Email textbox with value: k9wxyrbxgdon6p
+[INFO ] [2023-03-13 18:39:32,871] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-13 18:39:33,739] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-13 18:39:33,822]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:24,601] Validate - Step 01: Open Register Link at Home Page
+[INFO ] [2023-03-13 18:40:25,750] Validate - Step 02: Click to Register button
+[INFO ] [2023-03-13 18:40:25,904] Validate - Step 03: Validate error message at First name textbox
+[INFO ] [2023-03-13 18:40:25,994]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:25,994] Validate - Step 04: Validate error message at Last name textbox
+[INFO ] [2023-03-13 18:40:26,069]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:26,069] Validate - Step 05: Validate error message at Email textbox
+[INFO ] [2023-03-13 18:40:26,147]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:26,148] Validate - Step 06: Validate error message at Password textbox
+[INFO ] [2023-03-13 18:40:26,226]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:26,226] Validate - Step 07: Validate error message at Confirm Password textbox
+[INFO ] [2023-03-13 18:40:26,306]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:26,397] Register - Step 01: Refresh the Register page
+[INFO ] [2023-03-13 18:40:26,413] Register - Step 02: click to Radio button
+[INFO ] [2023-03-13 18:40:26,890] Register - Step 03: Input to FirstName with value663 Joleen Groves
+[INFO ] [2023-03-13 18:40:27,073] Register - Step 04: Input to LastName with valueProsacco
+[INFO ] [2023-03-13 18:40:27,247] Register - Step 05: Select dropdown with value: 19
+[INFO ] [2023-03-13 18:40:27,395] Register - Step 06: Select dropdown with value: March
+[INFO ] [2023-03-13 18:40:27,552] Register - Step 07: Select dropdown with value: 1987
+[INFO ] [2023-03-13 18:40:27,712] Register - Step 08: Input to Email with valueSelenium5797@testing.com
+[INFO ] [2023-03-13 18:40:27,907] Register - Step 09: Input to Password Textbox with value: 3axpftrvk
+[INFO ] [2023-03-13 18:40:28,255] Register - Step 10: Click to Register button at Register page
+[INFO ] [2023-03-13 18:40:29,012] Register - Step 11: Verify Success message displayed
+[INFO ] [2023-03-13 18:40:29,098]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:40:29,098] Register - Step 12: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-03-13 18:40:29,551] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-13 18:40:30,037] Login - Step 02: Input to Email textbox with value: Selenium5797@testing.com
+[INFO ] [2023-03-13 18:40:30,202] Login - Step 03: Input to Email textbox with value: 3axpftrvk
+[INFO ] [2023-03-13 18:40:30,358] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-13 18:40:31,120] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-13 18:40:31,196]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:31,218] Validate - Step 01: Open Register Link at Home Page
+[INFO ] [2023-03-13 18:41:32,296] Validate - Step 02: Click to Register button
+[INFO ] [2023-03-13 18:41:32,450] Validate - Step 03: Validate error message at First name textbox
+[INFO ] [2023-03-13 18:41:32,538]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:32,538] Validate - Step 04: Validate error message at Last name textbox
+[INFO ] [2023-03-13 18:41:32,616]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:32,616] Validate - Step 05: Validate error message at Email textbox
+[INFO ] [2023-03-13 18:41:32,694]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:32,694] Validate - Step 06: Validate error message at Password textbox
+[INFO ] [2023-03-13 18:41:32,772]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:32,773] Validate - Step 07: Validate error message at Confirm Password textbox
+[INFO ] [2023-03-13 18:41:32,853]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:32,942] Register - Step 01: Refresh the Register page
+[INFO ] [2023-03-13 18:41:32,957] Register - Step 02: click to Radio button
+[INFO ] [2023-03-13 18:41:33,427] Register - Step 03: Input to FirstName with valueFransisca
+[INFO ] [2023-03-13 18:41:33,607] Register - Step 04: Input to LastName with valueSchoen
+[INFO ] [2023-03-13 18:41:33,789] Register - Step 05: Select dropdown with value: 19
+[INFO ] [2023-03-13 18:41:33,934] Register - Step 06: Select dropdown with value: March
+[INFO ] [2023-03-13 18:41:34,090] Register - Step 07: Select dropdown with value: 1987
+[INFO ] [2023-03-13 18:41:34,231] Register - Step 08: Input to Email with valueSelenium20424@testing.com
+[INFO ] [2023-03-13 18:41:34,426] Register - Step 09: Input to Password Textbox with value: 56aybfqo
+[INFO ] [2023-03-13 18:41:34,776] Register - Step 10: Click to Register button at Register page
+[INFO ] [2023-03-13 18:41:35,525] Register - Step 11: Verify Success message displayed
+[INFO ] [2023-03-13 18:41:35,607]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 18:41:35,607] Register - Step 12: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-03-13 18:41:36,088] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-13 18:41:36,568] Login - Step 02: Input to Email textbox with value: Selenium20424@testing.com
+[INFO ] [2023-03-13 18:41:36,754] Login - Step 03: Input to Email textbox with value: 56aybfqo
+[INFO ] [2023-03-13 18:41:36,928] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-13 18:41:37,744] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-13 18:41:37,830]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:46,480] Validate - Step 01: Open Register Link at Home Page
+[INFO ] [2023-03-13 19:30:47,577] Validate - Step 02: Click to Register button
+[INFO ] [2023-03-13 19:30:47,726] Validate - Step 03: Validate error message at First name textbox
+[INFO ] [2023-03-13 19:30:47,801]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:47,802] Validate - Step 04: Validate error message at Last name textbox
+[INFO ] [2023-03-13 19:30:47,879]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:47,879] Validate - Step 05: Validate error message at Email textbox
+[INFO ] [2023-03-13 19:30:47,959]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:47,959] Validate - Step 06: Validate error message at Password textbox
+[INFO ] [2023-03-13 19:30:48,039]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:48,039] Validate - Step 07: Validate error message at Confirm Password textbox
+[INFO ] [2023-03-13 19:30:48,120]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:48,204] Register - Step 01: Refresh the Register page
+[INFO ] [2023-03-13 19:30:48,211] Register - Step 02: click to Radio button
+[INFO ] [2023-03-13 19:30:48,698] Register - Step 03: Input to FirstName with valueAlex
+[INFO ] [2023-03-13 19:30:48,872] Register - Step 04: Input to LastName with valueSanchez
+[INFO ] [2023-03-13 19:30:49,046] Register - Step 05: Select dropdown with value: 10
+[INFO ] [2023-03-13 19:30:49,194] Register - Step 06: Select dropdown with value: March
+[INFO ] [2023-03-13 19:30:49,352] Register - Step 07: Select dropdown with value: 1987
+[INFO ] [2023-03-13 19:30:49,497] Register - Step 08: Input to Email with valuekevin98668@city.com
+[INFO ] [2023-03-13 19:30:49,684] Register - Step 09: Input to Password Textbox with value: 123456
+[INFO ] [2023-03-13 19:30:50,025] Register - Step 10: Click to Register button at Register page
+[INFO ] [2023-03-13 19:30:50,802] Register - Step 11: Verify Success message displayed
+[INFO ] [2023-03-13 19:30:50,881]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 19:30:50,881] Register - Step 12: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-03-13 19:30:51,342] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-13 19:30:51,810] Login - Step 02: Input to Email textbox with value: kevin98668@city.com
+[INFO ] [2023-03-13 19:30:51,971] Login - Step 03: Input to Email textbox with value: 123456
+[INFO ] [2023-03-13 19:30:52,128] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-13 19:30:52,916] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-13 19:30:53,001]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:07:55,939] Validate - Step 01: Open Register Link at Home Page
+[INFO ] [2023-03-13 20:07:57,029] Validate - Step 02: Click to Register button
+[INFO ] [2023-03-13 20:07:57,171] Validate - Step 03: Validate error message at First name textbox
+[INFO ] [2023-03-13 20:07:57,262]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:07:57,262] Validate - Step 04: Validate error message at Last name textbox
+[INFO ] [2023-03-13 20:07:57,337]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:07:57,337] Validate - Step 05: Validate error message at Email textbox
+[INFO ] [2023-03-13 20:07:57,415]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:07:57,415] Validate - Step 06: Validate error message at Password textbox
+[INFO ] [2023-03-13 20:07:57,495]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:07:57,495] Validate - Step 07: Validate error message at Confirm Password textbox
+[INFO ] [2023-03-13 20:07:57,571]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:07:57,625] Register - Step 01: Refresh the Register page
+[INFO ] [2023-03-13 20:07:57,632] Register - Step 02: click to Radio button
+[INFO ] [2023-03-13 20:07:58,104] Register - Step 03: Input to FirstName with valueSelenium
+[INFO ] [2023-03-13 20:07:58,278] Register - Step 04: Input to LastName with valueTesting
+[INFO ] [2023-03-13 20:07:58,458] Register - Step 05: Select dropdown with value: 12
+[INFO ] [2023-03-13 20:07:58,607] Register - Step 06: Select dropdown with value: March
+[INFO ] [2023-03-13 20:07:58,763] Register - Step 07: Select dropdown with value: 1987
+[INFO ] [2023-03-13 20:07:58,907] Register - Step 08: Input to Email with valueautomation17004@json.com
+[INFO ] [2023-03-13 20:07:59,087] Register - Step 09: Input to Password Textbox with value: 123456?a
+[INFO ] [2023-03-13 20:07:59,438] Register - Step 10: Click to Register button at Register page
+[INFO ] [2023-03-13 20:08:00,183] Register - Step 11: Verify Success message displayed
+[INFO ] [2023-03-13 20:08:00,257]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-13 20:08:00,258] Register - Step 12: Click to Continue button at Register page and navigate to Home page
+[INFO ] [2023-03-13 20:08:00,709] Login - Step 01: Open Login Link At Home Page
+[INFO ] [2023-03-13 20:08:01,190] Login - Step 02: Input to Email textbox with value: automation17004@json.com
+[INFO ] [2023-03-13 20:08:01,348] Login - Step 03: Input to Email textbox with value: 123456?a
+[INFO ] [2023-03-13 20:08:01,505] Login - Step 04: Click to Login button at Login page
+[INFO ] [2023-03-13 20:08:02,290] Login - Step 05: Verify My Account link displayed
+[INFO ] [2023-03-13 20:08:02,391]  -------------------------- PASSED -------------------------- 

@@ -13,7 +13,6 @@
 	<classpathentry kind="lib" path="libWebDriverManager/commons-codec-1.13.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/commons-compress-1.20.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/commons-io-2.6.jar"/>
-	<classpathentry kind="lib" path="libWebDriverManager/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/dec-0.1.2.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/docker-java-3.2.11.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/docker-java-api-3.2.11.jar"/>
@@ -61,5 +60,12 @@
 	<classpathentry kind="lib" path="libAllure/okio-1.14.1.jar"/>
 	<classpathentry kind="lib" path="libAllure/tika-core-1.20.jar"/>
 	<classpathentry kind="lib" path="libAllure/aspectjweaver-1.8.10.jar"/>
+	<classpathentry kind="lib" path="libFaker/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="libFaker/snakeyaml-1.23.jar"/>
+	<classpathentry kind="lib" path="libFaker/javafaker-1.0.2.jar" sourcepath="libFaker/javafaker-1.0.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="libFaker/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="libJson/jackson-annotations-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libJson/jackson-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libJson/jackson-databind-2.10.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
